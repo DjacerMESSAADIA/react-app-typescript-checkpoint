@@ -1,0 +1,15 @@
+{
+  "name": "type-script-checkpoint",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run ts\" \"npm run js\"",
+    "ts": "cd react-ts-version && npm run dev",
+    "js": "cd react-js-version && npm run dev",
+    "install-all": "npm install && cd react-js-version && npm install && cd ../react-ts-version && npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
